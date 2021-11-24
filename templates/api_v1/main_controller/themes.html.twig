@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">GET https://apicolorize.me/api/v1/themes/</code>
+        <p class="card-text">To display the list of themes</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">GET https://apicolorize.me/api/v1/themes/palettes</code>
+        <p class="card-text">To display the list of themes with associated palettes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">GET https://apicolorize.me/api/v1/themes/{codeThemes}</code>
+        <p class="card-text">To display the detail of a theme. </p>
+      <p><strong>Parameters</strong> </p>
+      <p> codeThemes : required (int id theme)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">GET https://apicolorize.me/api/v1/themes/{codeThemes}/palettes</code>
+        <p class="card-text">To display the detail of a theme with associated palettes. </p>
+      <p><strong>Parameters</strong>  </p>
+      <p>codeThemes : required (int id theme)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">POST https://apicolorize.me/api/v1/themes/</code>
+        <p class="card-text">insert a theme.  </p>
+      <p> <strong>JSON</strong> { "name" : "theme" } </p>
+      <p><strong>ADMIN authentication required</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">DELETE https://apicolorize.me/api/v1/themes/{codeThemes}</code>
+        <p class="card-text">Delete a theme </p>
+      <p><strong>Parameters</strong> </p>
+      <p> codeThemes : required (int id theme) </p>
+      <p><strong>ADMIN authentication required</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

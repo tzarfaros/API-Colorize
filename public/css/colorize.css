@@ -1,0 +1,108 @@
+html,
+body {
+    height: 100%;
+    background-color: #2c3e50;
+    width : 100%;
+    
+    
+}
+
+.tvshow_title {
+    text-align:center;
+    padding: 1em;
+    background-color: rgba(200, 200, 200, .5);
+    z-index:100;
+    
+    position: absolute;
+    top : 0px;
+    width:100%;
+}
+.form-signin {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.bg-dark {
+    background-color: rgb(8, 165, 238) !important;
+    box-shadow:1px 5px 10px rgba(0,0,0,1);
+}
+.navbar-nav .nav-link:hover, .nav-link:focus{
+    
+    border: 1px solid rgb(71, 234, 255);
+    box-shadow:1px 5px 10px rgba(0,0,0,1);
+    
+}
+li.nav-item{
+    color:black;
+}
+.text-danger :hover{
+    border: 1px solid rgb(71, 234, 255);
+    box-shadow:1px 5px 10px rgba(0,0,0,1);
+    
+}
+.card-body {
+    background-color: #bdc3c7;
+   
+}
+.btn-primary {
+    color: black;
+    background-color: #ac8c0e;
+    border: 1px solid rgb(71, 234, 255);
+    box-shadow:1px 5px 10px rgba(0,0,0,1);
+}
+main{
+     width: 50%;
+     
+    margin:auto ;
+    
+} 
+.card {
+width:100%;
+margin-bottom: 100px;
+text-align: center;
+
+}
+.card:hover{
+    border: 1px solid rgb(71, 234, 255);
+    box-shadow:1px 5px 10px rgba(0,0,0,1);
+}
+h1{
+    color:silver;
+}
+.col-sm-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.btn-light {
+    color: black;
+    background-color: #ac8c0e;
+    border: 1px solid rgb(71, 234, 255);
+    box-shadow:1px 5px 10px rgba(0,0,0,1);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+.icon{
+    color:red;
+}

@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello mainControllersController!{% endblock %}
+
+{% block body %}
+<h1>Documentation</h1>
+<hr>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Users</h5>
+        <p class="card-text">All roads associated with Users</p>
+        <a href="{{ url('usersPage') }}" class="btn btn-primary">Go</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Palettes</h5>
+        <p class="card-text">All roads associated with Palettes</p>
+        <a href="{{ url('palettesPage') }}" class="btn btn-primary">Go</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Themes</h5>
+        <p class="card-text">All roads associated with Themes</p>
+        <a href="{{ url('themesPage') }}" class="btn btn-primary">Go</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Colors</h5>
+        <p class="card-text">All roads associated with Colors</p>
+        <a href="{{ url('colorsPage') }}" class="btn btn-primary">Go </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Files</h5>
+        <p class="card-text">All roads associated with Files</p>
+        <a href="{{ url('filesPage') }}" class="btn btn-primary">Go </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

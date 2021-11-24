@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">GET https://apicolorize.me/api/v1/colors/</code>
+        <p class="card-text">To display the list of colors</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">GET https://apicolorize.me/api/v1/colors/{codeColors}</code>
+        <p class="card-text">To display the detail of a color. </p>
+      <p><strong>Parameters</strong>  codeColors : required (int id color)</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <code class="card-title">POST https://apicolorize.me/api/v1/colors/</code>
+        <p class="card-text">insert a color.   <strong>JSON</strong> { "name" : "test", "hex" : "#111111" }</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

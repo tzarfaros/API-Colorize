@@ -1,0 +1,21 @@
+
+{% extends 'base.html.twig' %}
+{% block title %} Page non trouvée {% endblock %}
+
+{% block body %}
+
+    <h1 div class="mx-auto" style="width: 400px;">Page non trouvée </h1>
+
+    <p div class="mx-auto" style="width: 200px;">
+        Code de l'erreur : {{status_code}}
+    </p> 
+
+    <p div class="mx-auto" style="width: 600px;">
+        The requested page couldn't be located. Checkout for any URL
+        misspelling or 
+    </p>
+    <p div class="mx-auto" style="width: 200px;">
+<a href="{{ path('homepage') }}">return to the homepage</a>.
+    </p>
+
+{% endblock %}
