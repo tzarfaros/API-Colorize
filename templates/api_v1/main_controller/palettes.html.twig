@@ -63,7 +63,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/{codePalettes}</code>
         <p class="card-text">To display the detail of a palette. </p>
-      <p><strong>Parameters</strong>  codePalettes : required (int id palette)</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -75,7 +85,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/{codePalettes}/colors</code>
         <p class="card-text">To display the detail of a palette with their associated colors. </p>
-      <p><strong>Parameters</strong>  codePalettes : required (int id palette)</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -87,7 +107,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/paletteoruser/{string}</code>
         <p class="card-text">searches for the name of a palette or a user to display palettes </p>
-      <p><strong>Parameters</strong>  string : required (string name palette or name user)</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>string</th>
+              <td>required</td>
+              <td>string</td>
+              <td>name palette or name user</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -99,7 +129,18 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/{codePalettes}/files</code>
         <p class="card-text">To display the detail of a palette with their associated files. </p>
-      <p><strong>Parameters</strong>  codePalettes : required (int id palette)  <strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -111,7 +152,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/{codePalettes}/themes</code>
         <p class="card-text">To display the detail of a palette with their associated themes. </p>
-      <p><strong>Parameters</strong>  codePalettes : required (int id palette)</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -123,7 +174,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/{codePalettes}/user</code>
         <p class="card-text">To display the detail of a palette with their associated users and its owner.</p>
-      <p> <strong>Parameters</strong>  codePalettes : required (int id palette)</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -135,12 +196,29 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/searchBySort?sort={sort}&filter={filter}&page={page}</code>
         <p class="card-text">To display the detail of a palette according the sort (new , save or likes) and the filter ( none for all, 1 for generated , and 2 for the others). You can add page with the number for the pagination (result = 20 palettes by page). </p> 
-      <p> <strong>Parameters</strong></p> 
-      <p><strong>Sort</strong>: required (string new , save or likes) new : to display palettes from new to old. </p>
-      <p>Likes : to display palettes from most liked to less liked. </p>
-      <p> save : to display palletes most saved to less saved. </p>
-      <p><strong>Filter </strong>: optional (int 1 , or 2) 1 : to display generated palettes. 2 : to display submissions palettes.</p> 
-  <p>Page : optional (int 1 , 2, ..) to display palettes 20 by page.</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>Sort</th>
+              <td>required</td>
+              <td>string</td>
+              <td>new, save or likes</td>
+            </tr>
+            <tr>
+              <th>filter</th>
+              <td>optional</td>
+              <td>int</td>
+              <td>1, 2</td>
+            </tr>
+            <tr>
+              <th>page</th>
+              <td>optional</td>
+              <td>int</td>
+              <td>to display palettes 20 by page</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -152,15 +230,35 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/palettes/searchByTheme?theme={theme}&sort={sort}&filter={filter}&page={page}</code>
         <p class="card-text">To display the detail of a palette according the sort (new , save or likes) and the filter ( none for all, 1 for generated , and 2 for the others). You can add page with the number for the pagination (result = 20 palettes by page). </p>
-      <p> <strong>Parameters</strong></p> 
-      <p><strong>theme</strong> : required (string name theme) </p>
-      <p><strong>sort</strong> : optional (string new, save or likes) </p>
-      <p>new : to display palettes from new to old. </p>
-      <p>Likes : to display palettes from most liked to less liked. </p>
-      <p>save : to display palletes most saved to less saved.</p>
-      <p> <strong>filter</strong> : optional (int 0, 1, 2). </p>
-      <p>0 : all, 1 : to display generated palettes. 2 : to display submissions palettes. </p>
-      <p><strong>page </strong>: optional (int 1 , 2, ..) to display palettes (20 by page).</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>theme</th>
+              <td>required</td>
+              <td>string</td>
+              <td>name theme</td>
+            </tr>
+            <tr>
+              <th>Sort</th>
+              <td>required</td>
+              <td>string</td>
+              <td>new, save or likes</td>
+            </tr>
+            <tr>
+              <th>filter</th>
+              <td>optional</td>
+              <td>int</td>
+              <td>1, 2</td>
+            </tr>
+            <tr>
+              <th>page</th>
+              <td>optional</td>
+              <td>int</td>
+              <td>to display palettes 20 by page</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -171,8 +269,27 @@
     <div class="card">
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/palettes/{codeUser}/{codePalette}</code>
-        <p class="card-text">modify a palette with its colors <strong>JSON</strong> { "name": "palette name", "colors": [ { "name": "magenta", "hex": "#11111" }, { "name": "green", "hex": "#22222" }, { "name": "blue", "hex": "#33333" }, { "name": "red", "hex": "#4444" }, { "name": "yellow", "hex": "#55555" } ], "themes": [ { "name": "existing theme" } ] } </p>
-        <p> <strong>Parameters</strong>  codeUser : required (int id user), codePalette : required (int id palette) <strong>User authentication required</strong></p>
+        <p class="card-text">modify a palette with its colors</p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name": "palette name", "colors": [ { "name": "magenta", "hex": "#11111" }, { "name": "green", "hex": "#22222" }, { "name": "blue", "hex": "#33333" }, { "name": "red", "hex": "#4444" }, { "name": "yellow", "hex": "#55555" } ], "themes": [ { "name": "existing theme" } ] }</code>
       </div>
     </div>
   </div>
@@ -183,8 +300,21 @@
     <div class="card">
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/palettes/{codePalette}/features</code>
-        <p class="card-text">add or remove features from a palette <strong>JSON</strong> { "features" : true or false }</p>
-        <p><strong>Parameters</strong>  codePalette : required (int id palette) <strong>ADMIN authentication required</strong></p>
+        <p class="card-text">add or remove features from a palette</p>
+        <p><strong>ADMIN authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "features" : true or false }</code>
       </div>
     </div>
   </div>
@@ -196,7 +326,18 @@
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/palettes/{codePalette}/like</code>
         <p class="card-text">Add a like to a palette </p>
-      <p><strong>Parameters</strong>  codePalette : required (int id palette) <strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -208,7 +349,18 @@
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/palettes/{codePalette}/dislike</code>
         <p class="card-text">Remove a like from a palette </p>
-      <p><strong>Parameters</strong>  codePalette : required (int id palette) <strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -220,7 +372,20 @@
       <div class="card-body">
         <code class="card-title">POST https://apicolorize.me/api/v1/palettes/{codeUser}</code>
         <p class="card-text">create a palette with its colors </p>
-      <p><strong>Parameters</strong> codeUser : required (int id user) <strong>JSON</strong> { "name": "palette name", "colors": [ { "name": "magenta", "hex": "#11111" }, { "name": "green", "hex": "#22222" }, { "name": "blue", "hex": "#33333" }, { "name": "red", "hex": "#4444" }, { "name": "yellow", "hex": "#55555" } ], "themes": [ { "name": "existing theme" } ] }</p>
+        <p><strong>ADMIN authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name": "palette name", "colors": [ { "name": "magenta", "hex": "#11111" }, { "name": "green", "hex": "#22222" }, { "name": "blue", "hex": "#33333" }, { "name": "red", "hex": "#4444" }, { "name": "yellow", "hex": "#55555" } ], "themes": [ { "name": "existing theme" } ] }</code>
       </div>
     </div>
   </div>
@@ -232,7 +397,24 @@
       <div class="card-body">
         <code class="card-title">DELETE https://apicolorize.me/api/v1/palettes/{codePalettes}/{codeUser}</code>
         <p class="card-text">A user removes a palette from their creation </p>
-      <p><strong>Parameters</strong>  codePalettes : required (int id palette), codeUser : required (int id user) <strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+            <tr>
+              <th>codePalettes</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

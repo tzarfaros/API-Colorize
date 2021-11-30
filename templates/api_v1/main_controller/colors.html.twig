@@ -18,7 +18,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/colors/{codeColors}</code>
         <p class="card-text">To display the detail of a color. </p>
-      <p><strong>Parameters</strong>  codeColors : required (int id color)</p>
+          <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeColors</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id color</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -28,7 +38,9 @@
     <div class="card">
       <div class="card-body">
         <code class="card-title">POST https://apicolorize.me/api/v1/colors/</code>
-        <p class="card-text">insert a color.   <strong>JSON</strong> { "name" : "test", "hex" : "#111111" }</p>
+        <p class="card-text">insert a color.</p>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name" : "test", "hex" : "#111111" }</code>
       </div>
     </div>
   </div>

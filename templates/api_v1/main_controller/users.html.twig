@@ -7,7 +7,7 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/</code>
         <p class="card-text">To display the list of users </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
       </div>
     </div>
   </div>
@@ -19,8 +19,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}</code>
         <p class="card-text">To display the detail of a user.</p>
-      <p> <strong>Parameters</strong>  </p>
-      <p>codeUser : required (int id user)</p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -32,9 +41,18 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}/palettes/favorites</code>
         <p class="card-text">To display the detail of a user with his favorite palettes. </p>
-      <p><strong>Parameters</strong></p>
-      <p>  codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -45,7 +63,19 @@
     <div class="card">
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}/palettes/likes</code>
-        <p class="card-text">To display the detail of a user with his likes palettes. <strong>Parameters</strong>  codeUser : required (int id user) <strong>User authentication required</strong></p>
+        <p class="card-text">To display the detail of a user with his likes palettes.</p> 
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -56,7 +86,25 @@
     <div class="card">
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}/palettes/like?page={page}</code>
-        <p class="card-text">To display the detail of a user with his likes palettes and with a pagination. <strong>Parameters</strong>  codeUser : required (int id user), page : required (int number page) <strong>User authentication required</strong></p>
+        <p class="card-text">To display the detail of a user with his likes palettes and with a pagination.</p> 
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+              <tr>
+                <th>page</th>
+                <td>required</td>
+                <td>int</td>
+                <td>number page</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -68,8 +116,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}/palettes/created</code>
         <p class="card-text">To display the detail of a user with its created palettes. </p>
-      <p><strong>Parameters</strong> </p>
-      <p> codeUser : required (int id user)</p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -81,9 +138,18 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}/files</code>
         <p class="card-text">To display the detail of a user with its created files.</p>
-      <p> <strong>Parameters</strong> </p>
-      <p> codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -95,10 +161,24 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/user/{codeUser}/files/{codeFiles}</code>
         <p class="card-text">To display the detail of a user with a requested file.</p>
-      <p> <strong>Parameters</strong> </p>
-      <p> codeUser : required (int id user)</p>
-      <p> codeFiles : required (int id file) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+               <tr>
+                <th>codeFiles</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id file</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -110,11 +190,20 @@
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/user/{codeUser}</code>
         <p class="card-text">modify a user. </p>
-      <p><strong>JSON</strong> </p>
-      <p>{ "username" : "test", "email" : "tata@test.io", "password" : "test" } </p>
-      <p><strong>Parameters</strong>  </p>
-      <p>codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>JSON</strong></p>
+          <code class="json">{ "username" : "test", "email" : "tata@test.io", "password" : "test" }</code>
       </div>
     </div>
   </div>
@@ -126,8 +215,8 @@
       <div class="card-body">
         <code class="card-title">POST https://apicolorize.me/api/v1/user/</code>
         <p class="card-text">insert a user. </p>
-      <p>  <strong>JSON</strong> </p>
-      <p>{ "username" : "test", "email" : "tata@test.io", "password" : "test" }</p>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "username" : "test", "email" : "tata@test.io", "password" : "test" }</code>
       </div>
     </div>
   </div>
@@ -139,9 +228,18 @@
       <div class="card-body">
         <code class="card-title">DELETE https://apicolorize.me/api/v1/user/{codeUser}</code>
         <p class="card-text">Delete a user </p>
-      <p><strong>Parameters</strong> </p>
-      <p> codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeUser</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id user</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>

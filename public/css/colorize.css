@@ -1,45 +1,10 @@
 html,
 body {
-    height: 100%;
     background-color: #D1D8DC;
-    width : 100%;    
 }
 
-.tvshow_title {
-    text-align:center;
-    padding: 1em;
-    background-color: rgba(200, 200, 200, .5);
-    z-index:100;   
-    position: absolute;
-    top : 0px;
-    width:100%;
-}
-
-.form-signin {
-    width: 100%;
-    max-width: 400px;
-    padding: 15px;
-    margin: auto;
-}
-
-.form-signin .checkbox {
-    font-weight: 400;
-}
-
-.form-signin .form-floating:focus-within {
-    z-index: 2;
-}
-
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.api {
+    margin-top: 3.5em;
 }
 
 .bg-dark {
@@ -52,11 +17,6 @@ body {
 
 li.nav-item{
     color:black;
-}
-
-.text-danger :hover{
-    border: 1px solid rgb(71, 234, 255);
-    
 }
 
 .card-body {
@@ -107,10 +67,16 @@ h3 {
     color: rgb(255, 255, 255);
 }
 
-.icon{
-    color:red;
+.json {
+    color:white;
+    background-color: #212529;
+    padding: 0.5em;
 }
 
 code {
     color:#2997DB;
+}
+
+th td {
+    color:white;
 }

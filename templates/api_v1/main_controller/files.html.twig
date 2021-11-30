@@ -8,9 +8,18 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/files/{codeUser}</code>
         <p class="card-text">To display the list of files with their user.</p>
-      <p> <strong>Parameters</strong></p>
-      <p> codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>User authentication required</strong></p>
       </div>
     </div>
   </div>
@@ -22,8 +31,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/files/palettes/{codeUser}</code>
         <p class="card-text">To display the list of files with their associated palettes. </p>
-      <p><strong>Parameters</strong> </p>
-      <p>codeUser : required (int id user)</p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+          </tbody>
+        </table>
       <p> <strong>User authentication required</strong></p>
       </div>
     </div>
@@ -36,9 +54,23 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/files/{codeFiles}/{codeUser}</code>
         <p class="card-text">To display the detail of a file with their user.</p>
-      <p> <strong>Parameters</strong>  </p>
-      <p>codeFiles : required (int id file)</p>
-      <p> codeUser : required (int id user) </p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+            <tr>
+              <th>codeFiles</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id file</td>
+            </tr>
+          </tbody>
+        </table>
       <p><strong>User authentication required</strong></p>
       </div>
     </div>
@@ -51,9 +83,23 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/files/{codeFiles}/palettes/{codeUser}</code>
         <p class="card-text">To display the detail of a file with their associated palettes. </p>
-      <p><strong>Parameters</strong></p>
-      <p>  codeFiles : required (int id file)</p>
-      <p> codeUser : required (int id user) </p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+            <tr>
+              <th>codeFiles</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id file</td>
+            </tr>
+          </tbody>
+        </table>
       <p><strong>User authentication required</strong></p>
       </div>
     </div>
@@ -65,10 +111,27 @@
     <div class="card">
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/files/{codeFiles}/{codeUser}</code>
-        <p class="card-text">modify a file <strong>JSON required</strong> { "name" : "desired modification" } </p>
-        <p><strong>Parameters</strong>  </p>
-        <p>codeFiles : required (int id file), codeUser : required (int id user) </p>
+        <p class="card-text">modify a file</p>
         <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+            <tr>
+              <th>codeFiles</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id file</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name" : "desired modification" }</code>
       </div>
     </div>
   </div>
@@ -80,12 +143,32 @@
       <div class="card-body">
         <code class="card-title">PATCH https://apicolorize.me/api/v1/files/{codeFiles}/{addPalette}/{codeUser}</code>
         <p class="card-text">modify a file and adding a palette </p>
-      <p><strong>JSON required</strong> { "name" : "current palette" } </p>
-      <p><strong>Parameters</strong>  
-      <p>codeFiles : required (int id file)</p>
-      <p> addPalette : required (int id palette)</p>
-      <p> codeUser : required (int id user) </p>
       <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+            <tr>
+              <th>codeFiles</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id file</td>
+            </tr>
+            <tr>
+              <th>addPalette</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name" : "current palette" }</code>
       </div>
     </div>
   </div>
@@ -97,9 +180,20 @@
       <div class="card-body">
         <code class="card-title">POST https://apicolorize.me/api/v1/files/user/{codeUser}</code>
         <p class="card-text">create a folder for a user </p>
-      <p><strong>JSON</strong> { "name" : "test" } </p>
-      <p><strong>Parameters</strong>  codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name" : "test" }</code>
       </div>
     </div>
   </div>
@@ -111,10 +205,24 @@
       <div class="card-body">
         <code class="card-title">DELETE https://apicolorize.me/api/v1/files/{codeFiles}/{codeUser}</code>
         <p class="card-text">A user deletes a folder from their creation</p>
-      <p> <strong>Parameters</strong>  </p>
-      <p>codeFiles : required (int id file)</p>
-      <p> codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeFiles</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id file</td>
+            </tr>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -126,11 +234,29 @@
       <div class="card-body">
         <code class="card-title">DELETE https://apicolorize.me/api/v1/files/{codeFiles}/palettes/{codePalette}/{codeUser}</code>
         <p class="card-text">A user removes a palette from a folder of their creation</p>
-      <p> <strong>Parameters</strong>  </p>
-      <p>codeFiles : required (int id file)</p>
-      <p> codePalette : required (int id palette)</p>
-      <p> codeUser : required (int id user) </p>
-      <p><strong>User authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+        <table class="table table-dark table-borderless">
+          <tbody>
+            <tr>
+              <th>codeFiles</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id file</td>
+            </tr>
+            <tr>
+              <th>codePalette</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id palette</td>
+            </tr>
+            <tr>
+              <th>codeUser</th>
+              <td>required</td>
+              <td>int</td>
+              <td>id user</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

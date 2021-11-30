@@ -29,8 +29,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/themes/{codeThemes}</code>
         <p class="card-text">To display the detail of a theme. </p>
-      <p><strong>Parameters</strong> </p>
-      <p> codeThemes : required (int id theme)</p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeThemes</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id theme</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -42,8 +51,17 @@
       <div class="card-body">
         <code class="card-title">GET https://apicolorize.me/api/v1/themes/{codeThemes}/palettes</code>
         <p class="card-text">To display the detail of a theme with associated palettes. </p>
-      <p><strong>Parameters</strong>  </p>
-      <p>codeThemes : required (int id theme)</p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeThemes</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id theme</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
@@ -55,8 +73,9 @@
       <div class="card-body">
         <code class="card-title">POST https://apicolorize.me/api/v1/themes/</code>
         <p class="card-text">insert a theme.  </p>
-      <p> <strong>JSON</strong> { "name" : "theme" } </p>
-      <p><strong>ADMIN authentication required</strong></p>
+        <p><strong>ADMIN authentication required</strong></p>
+        <p><strong>JSON</strong></p>
+        <code class="json">{ "name" : "theme" }</code>
       </div>
     </div>
   </div>
@@ -68,9 +87,18 @@
       <div class="card-body">
         <code class="card-title">DELETE https://apicolorize.me/api/v1/themes/{codeThemes}</code>
         <p class="card-text">Delete a theme </p>
-      <p><strong>Parameters</strong> </p>
-      <p> codeThemes : required (int id theme) </p>
-      <p><strong>ADMIN authentication required</strong></p>
+        <p><strong>ADMIN authentication required</strong></p>
+        <p><strong>Parameters</strong></p>
+          <table class="table table-dark table-borderless">
+            <tbody>
+              <tr>
+                <th>codeThemes</th>
+                <td>required</td>
+                <td>int</td>
+                <td>id theme</td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
   </div>
